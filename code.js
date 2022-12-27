@@ -255,5 +255,5 @@ function opcSeleccionada2() {
   }
 }
 reiniciar.addEventListener("click", () => {
-  window.location.reload();
-});
+  window.location.reload()
+})
