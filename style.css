@@ -9,7 +9,7 @@ body{
     margin-bottom: 0.8em;
 }
 button{
-    font-size: 2em;
+    font-size: 1.8em;
     background-color: rgb(56, 71, 75);
     color: white;
     border: 1px solid black;
@@ -18,7 +18,7 @@ button{
     transition: 0.2s;
 }
 button:hover{
-    font-size: 2.4em;
+    font-size:2.4em;
     background-color: rgb(47, 60, 63);
 }
 .contenedor-accion-seleccionada img{
@@ -29,7 +29,7 @@ button:hover{
 
 .contenedor-opciones img {
     display: inline-block;
-    width: 6em;
+    width: 5.4em;
     background:rgb(153, 102, 102);
     border: 2% solid rgb(0, 0, 0);
     border-radius: 5px;
@@ -50,7 +50,7 @@ h1{
     color: white;
 }
 h2{
-    margin: 0 0 0.8em 0;
+    margin: 0 0 0.3em 0;
     font-size: 4em;
     color: white;
     text-align: center;
