@@ -3,6 +3,10 @@ const bestOfOne = document.querySelector("#bestOfOne");
 const bestOfThree = document.querySelector("#bestOfThree");
 const bestOfFive = document.querySelector("#bestOfFive");
 const bestOfSeven = document.querySelector("#bestOfSeven");
+const infinito = document.querySelector("#infinito");
+
+const reiniciar = document.querySelector("#reset");
+
 const modoSeleccionadoVar = document.querySelector("#modo-seleccionado");
 //variables del jugador 1
 const opcPiedra1 = document.querySelector("#piedra-1");
@@ -27,11 +31,14 @@ bestOfOne.addEventListener("click", modoSeleccionado);
 bestOfThree.addEventListener("click", modoSeleccionado);
 bestOfFive.addEventListener("click", modoSeleccionado);
 bestOfSeven.addEventListener("click", modoSeleccionado);
+infinito.addEventListener("click", modoSeleccionado);
+
 
 function modoSeleccionado() {
   modoSeleccionadoVar.id = this.id;
   switch (modoSeleccionadoVar.id) {
     case "bestOfOne":
+      modoSeleccionadoVar.textContent= "Mejor de 1";
       alert("GANA EL MEJOR DE 1 JUEGO");
       rondas = 1;
       opcPiedra1.addEventListener("click", opcSeleccionada1);
@@ -43,6 +50,7 @@ function modoSeleccionado() {
       opcTijera2.addEventListener("click", opcSeleccionada2);
       break;
     case "bestOfThree":
+      modoSeleccionadoVar.textContent= "Mejor de 3";
       alert("GANA EL MEJOR DE 3 JUEGOS");
       rondas = 2;
       opcPiedra1.addEventListener("click", opcSeleccionada1);
@@ -54,6 +62,7 @@ function modoSeleccionado() {
       opcTijera2.addEventListener("click", opcSeleccionada2);
       break;
     case "bestOfFive":
+      modoSeleccionadoVar.textContent= "Mejor de 5";
       alert("GANA EL MEJOR DE 5 JUEGOS");
       rondas = 3;
       opcPiedra1.addEventListener("click", opcSeleccionada1);
@@ -65,8 +74,21 @@ function modoSeleccionado() {
       opcTijera2.addEventListener("click", opcSeleccionada2);
       break;
     case "bestOfSeven":
+      modoSeleccionadoVar.textContent= "Mejor de 7";
       alert("GANA EL MEJOR DE 7 JUEGOS");
       rondas = 4;
+      opcPiedra1.addEventListener("click", opcSeleccionada1);
+      opcPapel1.addEventListener("click", opcSeleccionada1);
+      opcTijera1.addEventListener("click", opcSeleccionada1);
+
+      opcPiedra2.addEventListener("click", opcSeleccionada2);
+      opcPapel2.addEventListener("click", opcSeleccionada2);
+      opcTijera2.addEventListener("click", opcSeleccionada2);
+      break;
+    case "infinito":
+      modoSeleccionadoVar.textContent= "Infinito";
+      alert("GANA EL QUE CONSIGA MÁS PUNTOS");
+      rondas = 1000;
       opcPiedra1.addEventListener("click", opcSeleccionada1);
       opcPapel1.addEventListener("click", opcSeleccionada1);
       opcTijera1.addEventListener("click", opcSeleccionada1);
@@ -99,12 +121,12 @@ function opcSeleccionada2() {
       if (score1 === rondas || score2 === rondas) {
         if (score1 > score2) {
           setTimeout(
-            () => alert(`Gana el jugador 1 por ${score1} a ${score2}`),
+            () => alert(`Gana el jugador 1 con un score de ${score1} - ${score2}`),
             500
           );
         } else {
           setTimeout(
-            () => alert(`Gana el jugador 1 por ${score1} a ${score2}`),
+            () => alert(`Gana el jugador 2 con un score de ${score1} - ${score2}`),
             500
           );
         }
@@ -120,12 +142,12 @@ function opcSeleccionada2() {
       if (score1 === rondas || score2 === rondas) {
         if (score1 > score2) {
           setTimeout(
-            () => alert(`Gana el jugador 1 por ${score1} a ${score2}`),
+            () => alert(`Gana el jugador 1 con un score de ${score1} - ${score2}`),
             500
           );
         } else {
           setTimeout(
-            () => alert(`Gana el jugador 1 por ${score1} a ${score2}`),
+            () => alert(`Gana el jugador 2 con un score de ${score1} - ${score2}`),
             500
           );
         }
@@ -141,12 +163,12 @@ function opcSeleccionada2() {
       if (score1 === rondas || score2 === rondas) {
         if (score1 > score2) {
           setTimeout(
-            () => alert(`Gana el jugador 1 por ${score1} a ${score2}`),
+            () => alert(`Gana el jugador 1 con un score de ${score1} - ${score2}`),
             500
           );
         } else {
           setTimeout(
-            () => alert(`Gana el jugador 1 por ${score1} a ${score2}`),
+            () => alert(`Gana el jugador 2 con un score de ${score1} - ${score2}`),
             500
           );
         }
@@ -162,12 +184,12 @@ function opcSeleccionada2() {
       if (score1 === rondas || score2 === rondas) {
         if (score1 > score2) {
           setTimeout(
-            () => alert(`Gana el jugador 1 por ${score1} a ${score2}`),
+            () => alert(`Gana el jugador 1 con un score de ${score1} - ${score2}`),
             500
           );
         } else {
           setTimeout(
-            () => alert(`Gana el jugador 1 por ${score1} a ${score2}`),
+            () => alert(`Gana el jugador 2 con un score de ${score1} - ${score2}`),
             500
           );
         }
@@ -183,12 +205,12 @@ function opcSeleccionada2() {
       if (score1 === rondas || score2 === rondas) {
         if (score1 > score2) {
           setTimeout(
-            () => alert(`Gana el jugador 1 por ${score1} a ${score2}`),
+            () => alert(`Gana el jugador 1 con un score de ${score1} - ${score2}`),
             500
           );
         } else {
           setTimeout(
-            () => alert(`Gana el jugador 1 por ${score1} a ${score2}`),
+            () => alert(`Gana el jugador 2 con un score de ${score1} - ${score2}`),
             500
           );
         }
@@ -204,12 +226,12 @@ function opcSeleccionada2() {
       if (score1 === rondas || score2 === rondas) {
         if (score1 > score2) {
           setTimeout(
-            () => alert(`Gana el jugador 1 por ${score1} a ${score2}`),
+            () => alert(`Gana el jugador 1 con un score de ${score1} - ${score2}`),
             500
           );
         } else {
           setTimeout(
-            () => alert(`Gana el jugador 1 por ${score1} a ${score2}`),
+            () => alert(`Gana el jugador 2 con un score de ${score1} - ${score2}`),
             500
           );
         }

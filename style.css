@@ -6,10 +6,10 @@ body{
 }
 .buttons{
     text-align: center;
-    margin-bottom: 0.8em;
+    margin-bottom: 0.8rem;
 }
 button{
-    font-size: 1.8em;
+    font-size: 1.8rem;
     background-color: rgb(56, 71, 75);
     color: white;
     border: 1px solid black;
@@ -18,40 +18,52 @@ button{
     transition: 0.2s;
 }
 button:hover{
-    font-size:2.4em;
+    font-size:2.4rem;
     background-color: rgb(47, 60, 63);
 }
+.contenedor-accion-seleccionada {
+    width: 200px;
+    margin: 0 auto;
+}
 .contenedor-accion-seleccionada img{
-    width: 7em;
+    width: 7rem;
     border-radius: 10px;
     visibility:hidden;
 }
-
+.contenedor-opciones {
+    width: 500px;
+    margin: 0 auto;
+}
 .contenedor-opciones img {
     display: inline-block;
-    width: 5.4em;
+    margin: 0 auto;
+    width: 5.4rem;
     background:rgb(153, 102, 102);
     border: 2% solid rgb(0, 0, 0);
     border-radius: 5px;
   }
-.opciones{
-    text-align: center;
-}
+
 
 #jugador-1{
     display: flex;
+    text-align: center;
 }
 #jugador-2{
     display: flex;
+    text-align: center;
 }
 h1{
-    margin: 0.5em 0 0 0;
-    font-size: 2em;
+    margin: 0.5rem 0 0 0;
+    font-size: 2rem;
     color: white;
 }
 h2{
-    margin: 0 0 0.3em 0;
-    font-size: 4em;
+    margin: 0 0 0.3rem 0;
+    font-size: 4rem;
     color: white;
     text-align: center;
+}
+#reset {
+    display: block;
+    margin: 20px auto;
 }
