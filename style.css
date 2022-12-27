@@ -9,8 +9,7 @@ body{
     margin-bottom: 0.8em;
 }
 button{
-    width: 10em;
-    height: 3em;
+    font-size: 2em;
     background-color: rgb(56, 71, 75);
     color: white;
     border: 1px solid black;
@@ -19,8 +18,7 @@ button{
     transition: 0.2s;
 }
 button:hover{
-    width: 10.5em;
-    height: 3.5em;
+    font-size: 2.4em;
     background-color: rgb(47, 60, 63);
 }
 .contenedor-accion-seleccionada img{
