@@ -217,6 +217,7 @@ function opcSeleccionada2() {
       }
       break;
     default:
-      console.log(`Empate. Van ${score1} - ${score2}`);
+      seleccion1.style.visibility="visible";
+      seleccion2.style.visibility="visible";
   }
 }
