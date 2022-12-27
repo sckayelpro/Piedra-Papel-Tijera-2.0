@@ -99,12 +99,12 @@ function opcSeleccionada2() {
       if (score1 === rondas || score2 === rondas) {
         if (score1 > score2) {
           setTimeout(
-            () => alert(`Ha ganado el jugador 1 por ${score1} a ${score2}`),
+            () => alert(`Gana el jugador 1 por ${score1} a ${score2}`),
             500
           );
         } else {
           setTimeout(
-            () => alert(`Ha ganado el jugador 1 por ${score1} a ${score2}`),
+            () => alert(`Gana el jugador 1 por ${score1} a ${score2}`),
             500
           );
         }
@@ -120,12 +120,12 @@ function opcSeleccionada2() {
       if (score1 === rondas || score2 === rondas) {
         if (score1 > score2) {
           setTimeout(
-            () => alert(`Ha ganado el jugador 1 por ${score1} a ${score2}`),
+            () => alert(`Gana el jugador 1 por ${score1} a ${score2}`),
             500
           );
         } else {
           setTimeout(
-            () => alert(`Ha ganado el jugador 1 por ${score1} a ${score2}`),
+            () => alert(`Gana el jugador 1 por ${score1} a ${score2}`),
             500
           );
         }
@@ -141,12 +141,12 @@ function opcSeleccionada2() {
       if (score1 === rondas || score2 === rondas) {
         if (score1 > score2) {
           setTimeout(
-            () => alert(`Ha ganado el jugador 1 por ${score1} a ${score2}`),
+            () => alert(`Gana el jugador 1 por ${score1} a ${score2}`),
             500
           );
         } else {
           setTimeout(
-            () => alert(`Ha ganado el jugador 1 por ${score1} a ${score2}`),
+            () => alert(`Gana el jugador 1 por ${score1} a ${score2}`),
             500
           );
         }
@@ -162,12 +162,12 @@ function opcSeleccionada2() {
       if (score1 === rondas || score2 === rondas) {
         if (score1 > score2) {
           setTimeout(
-            () => alert(`Ha ganado el jugador 1 por ${score1} a ${score2}`),
+            () => alert(`Gana el jugador 1 por ${score1} a ${score2}`),
             500
           );
         } else {
           setTimeout(
-            () => alert(`Ha ganado el jugador 1 por ${score1} a ${score2}`),
+            () => alert(`Gana el jugador 1 por ${score1} a ${score2}`),
             500
           );
         }
@@ -183,12 +183,12 @@ function opcSeleccionada2() {
       if (score1 === rondas || score2 === rondas) {
         if (score1 > score2) {
           setTimeout(
-            () => alert(`Ha ganado el jugador 1 por ${score1} a ${score2}`),
+            () => alert(`Gana el jugador 1 por ${score1} a ${score2}`),
             500
           );
         } else {
           setTimeout(
-            () => alert(`Ha ganado el jugador 1 por ${score1} a ${score2}`),
+            () => alert(`Gana el jugador 1 por ${score1} a ${score2}`),
             500
           );
         }
@@ -204,12 +204,12 @@ function opcSeleccionada2() {
       if (score1 === rondas || score2 === rondas) {
         if (score1 > score2) {
           setTimeout(
-            () => alert(`Ha ganado el jugador 1 por ${score1} a ${score2}`),
+            () => alert(`Gana el jugador 1 por ${score1} a ${score2}`),
             500
           );
         } else {
           setTimeout(
-            () => alert(`Ha ganado el jugador 1 por ${score1} a ${score2}`),
+            () => alert(`Gana el jugador 1 por ${score1} a ${score2}`),
             500
           );
         }
