@@ -24,8 +24,8 @@ var score2 = 0;
 //variable contador de rondas
 var rondas = 0;
 //variable score visible
-var scoreJ1=document.querySelector("#score-1");
-var scoreJ2=document.querySelector("#score-2")
+var scoreJ1 = document.querySelector("#score-1");
+var scoreJ2 = document.querySelector("#score-2");
 
 bestOfOne.addEventListener("click", modoSeleccionado);
 bestOfThree.addEventListener("click", modoSeleccionado);
@@ -33,12 +33,11 @@ bestOfFive.addEventListener("click", modoSeleccionado);
 bestOfSeven.addEventListener("click", modoSeleccionado);
 infinito.addEventListener("click", modoSeleccionado);
 
-
 function modoSeleccionado() {
   modoSeleccionadoVar.id = this.id;
   switch (modoSeleccionadoVar.id) {
     case "bestOfOne":
-      modoSeleccionadoVar.textContent= "Mejor de 1";
+      modoSeleccionadoVar.textContent = "Mejor de 1";
       alert("GANA EL MEJOR DE 1 JUEGO");
       rondas = 1;
       opcPiedra1.addEventListener("click", opcSeleccionada1);
@@ -50,7 +49,7 @@ function modoSeleccionado() {
       opcTijera2.addEventListener("click", opcSeleccionada2);
       break;
     case "bestOfThree":
-      modoSeleccionadoVar.textContent= "Mejor de 3";
+      modoSeleccionadoVar.textContent = "Mejor de 3";
       alert("GANA EL MEJOR DE 3 JUEGOS");
       rondas = 2;
       opcPiedra1.addEventListener("click", opcSeleccionada1);
@@ -62,7 +61,7 @@ function modoSeleccionado() {
       opcTijera2.addEventListener("click", opcSeleccionada2);
       break;
     case "bestOfFive":
-      modoSeleccionadoVar.textContent= "Mejor de 5";
+      modoSeleccionadoVar.textContent = "Mejor de 5";
       alert("GANA EL MEJOR DE 5 JUEGOS");
       rondas = 3;
       opcPiedra1.addEventListener("click", opcSeleccionada1);
@@ -74,7 +73,7 @@ function modoSeleccionado() {
       opcTijera2.addEventListener("click", opcSeleccionada2);
       break;
     case "bestOfSeven":
-      modoSeleccionadoVar.textContent= "Mejor de 7";
+      modoSeleccionadoVar.textContent = "Mejor de 7";
       alert("GANA EL MEJOR DE 7 JUEGOS");
       rondas = 4;
       opcPiedra1.addEventListener("click", opcSeleccionada1);
@@ -86,7 +85,7 @@ function modoSeleccionado() {
       opcTijera2.addEventListener("click", opcSeleccionada2);
       break;
     case "infinito":
-      modoSeleccionadoVar.textContent= "Infinito";
+      modoSeleccionadoVar.textContent = "Infinito";
       alert("GANA EL QUE CONSIGA MÁS PUNTOS");
       rondas = 1000;
       opcPiedra1.addEventListener("click", opcSeleccionada1);
@@ -101,8 +100,8 @@ function modoSeleccionado() {
 }
 
 function opcSeleccionada1() {
-  seleccion1.style.visibility="hidden";
-  seleccion2.style.visibility="hidden";
+  seleccion1.style.visibility = "hidden";
+  seleccion2.style.visibility = "hidden";
   seleccion1.src = this.src;
   seleccion1.className = this.classList.item(1);
   jugador1 = seleccion1.className;
@@ -114,19 +113,21 @@ function opcSeleccionada2() {
   switch (jugador1 + "|" + jugador2) {
     case "piedra|papel":
       score2++;
-      scoreJ1.textContent=score1;
-      scoreJ2.textContent=score2;
-      seleccion1.style.visibility="visible";
-      seleccion2.style.visibility="visible";
+      scoreJ1.textContent = score1;
+      scoreJ2.textContent = score2;
+      seleccion1.style.visibility = "visible";
+      seleccion2.style.visibility = "visible";
       if (score1 === rondas || score2 === rondas) {
         if (score1 > score2) {
           setTimeout(
-            () => alert(`Gana el jugador 1 con un score de ${score1} - ${score2}`),
+            () =>
+              alert(`Gana el jugador 1 con un score de ${score1} - ${score2}`),
             500
           );
         } else {
           setTimeout(
-            () => alert(`Gana el jugador 2 con un score de ${score1} - ${score2}`),
+            () =>
+              alert(`Gana el jugador 2 con un score de ${score1} - ${score2}`),
             500
           );
         }
@@ -135,19 +136,21 @@ function opcSeleccionada2() {
       break;
     case "piedra|tijera":
       score1++;
-      scoreJ1.textContent=score1;
-      scoreJ2.textContent=score2;
-      seleccion1.style.visibility="visible";
-      seleccion2.style.visibility="visible";
+      scoreJ1.textContent = score1;
+      scoreJ2.textContent = score2;
+      seleccion1.style.visibility = "visible";
+      seleccion2.style.visibility = "visible";
       if (score1 === rondas || score2 === rondas) {
         if (score1 > score2) {
           setTimeout(
-            () => alert(`Gana el jugador 1 con un score de ${score1} - ${score2}`),
+            () =>
+              alert(`Gana el jugador 1 con un score de ${score1} - ${score2}`),
             500
           );
         } else {
           setTimeout(
-            () => alert(`Gana el jugador 2 con un score de ${score1} - ${score2}`),
+            () =>
+              alert(`Gana el jugador 2 con un score de ${score1} - ${score2}`),
             500
           );
         }
@@ -156,19 +159,21 @@ function opcSeleccionada2() {
       break;
     case "papel|piedra":
       score1++;
-      scoreJ1.textContent=score1;
-      scoreJ2.textContent=score2;
-      seleccion1.style.visibility="visible";
-      seleccion2.style.visibility="visible";
+      scoreJ1.textContent = score1;
+      scoreJ2.textContent = score2;
+      seleccion1.style.visibility = "visible";
+      seleccion2.style.visibility = "visible";
       if (score1 === rondas || score2 === rondas) {
         if (score1 > score2) {
           setTimeout(
-            () => alert(`Gana el jugador 1 con un score de ${score1} - ${score2}`),
+            () =>
+              alert(`Gana el jugador 1 con un score de ${score1} - ${score2}`),
             500
           );
         } else {
           setTimeout(
-            () => alert(`Gana el jugador 2 con un score de ${score1} - ${score2}`),
+            () =>
+              alert(`Gana el jugador 2 con un score de ${score1} - ${score2}`),
             500
           );
         }
@@ -177,19 +182,21 @@ function opcSeleccionada2() {
       break;
     case "papel|tijera":
       score2++;
-      scoreJ1.textContent=score1;
-      scoreJ2.textContent=score2;
-      seleccion1.style.visibility="visible";
-      seleccion2.style.visibility="visible";
+      scoreJ1.textContent = score1;
+      scoreJ2.textContent = score2;
+      seleccion1.style.visibility = "visible";
+      seleccion2.style.visibility = "visible";
       if (score1 === rondas || score2 === rondas) {
         if (score1 > score2) {
           setTimeout(
-            () => alert(`Gana el jugador 1 con un score de ${score1} - ${score2}`),
+            () =>
+              alert(`Gana el jugador 1 con un score de ${score1} - ${score2}`),
             500
           );
         } else {
           setTimeout(
-            () => alert(`Gana el jugador 2 con un score de ${score1} - ${score2}`),
+            () =>
+              alert(`Gana el jugador 2 con un score de ${score1} - ${score2}`),
             500
           );
         }
@@ -198,19 +205,21 @@ function opcSeleccionada2() {
       break;
     case "tijera|piedra":
       score2++;
-      scoreJ1.textContent=score1;
-      scoreJ2.textContent=score2;
-      seleccion1.style.visibility="visible";
-      seleccion2.style.visibility="visible";
+      scoreJ1.textContent = score1;
+      scoreJ2.textContent = score2;
+      seleccion1.style.visibility = "visible";
+      seleccion2.style.visibility = "visible";
       if (score1 === rondas || score2 === rondas) {
         if (score1 > score2) {
           setTimeout(
-            () => alert(`Gana el jugador 1 con un score de ${score1} - ${score2}`),
+            () =>
+              alert(`Gana el jugador 1 con un score de ${score1} - ${score2}`),
             500
           );
         } else {
           setTimeout(
-            () => alert(`Gana el jugador 2 con un score de ${score1} - ${score2}`),
+            () =>
+              alert(`Gana el jugador 2 con un score de ${score1} - ${score2}`),
             500
           );
         }
@@ -219,19 +228,21 @@ function opcSeleccionada2() {
       break;
     case "tijera|papel":
       score1++;
-      scoreJ1.textContent=score1;
-      scoreJ2.textContent=score2;
-      seleccion1.style.visibility="visible";
-      seleccion2.style.visibility="visible";
+      scoreJ1.textContent = score1;
+      scoreJ2.textContent = score2;
+      seleccion1.style.visibility = "visible";
+      seleccion2.style.visibility = "visible";
       if (score1 === rondas || score2 === rondas) {
         if (score1 > score2) {
           setTimeout(
-            () => alert(`Gana el jugador 1 con un score de ${score1} - ${score2}`),
+            () =>
+              alert(`Gana el jugador 1 con un score de ${score1} - ${score2}`),
             500
           );
         } else {
           setTimeout(
-            () => alert(`Gana el jugador 2 con un score de ${score1} - ${score2}`),
+            () =>
+              alert(`Gana el jugador 2 con un score de ${score1} - ${score2}`),
             500
           );
         }
@@ -239,7 +250,10 @@ function opcSeleccionada2() {
       }
       break;
     default:
-      seleccion1.style.visibility="visible";
-      seleccion2.style.visibility="visible";
+      seleccion1.style.visibility = "visible";
+      seleccion2.style.visibility = "visible";
   }
 }
+reiniciar.addEventListener("click", () => {
+  window.location.reload();
+});
