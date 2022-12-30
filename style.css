@@ -47,8 +47,8 @@ button:hover {
   filter: invert(100%) sepia(100%) saturate(0%) hue-rotate(131deg) brightness(200%) contrast(50%);
   border: 1px solid rgb(0, 0, 0);
   border-radius: 0.5rem;
+  cursor: pointer;
 }
-
 #jugador-1 {
   display: flex;
   text-align: center;
@@ -82,16 +82,17 @@ h2 {
     font-size: 1.7rem;
   }
   .contenedor-accion-seleccionada {
-    width: 4.5rem;
+    width: 4rem;
   }
   .contenedor-accion-seleccionada img {
-    width: 4.5rem;
+    width: 4rem;
+    margin-left: -10px;
   }
   .contenedor-opciones {
-    width: 20rem;
+    width: 14rem;
   }
   .contenedor-opciones img {
-    width: 4rem;
+    width: 3.5rem;
   }
   h1 {
     font-size: 1.5rem;
