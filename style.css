@@ -6,41 +6,47 @@ body {
 }
 .buttons {
   text-align: center;
-  margin-bottom: 0.8rem;
+  margin-bottom: 0.5rem;
 }
 button {
   font-size: 1.8rem;
   background-color: rgb(56, 71, 75);
-  color: white;
+  color: rgb(212, 212, 212);
   border: 1px solid black;
-  border-radius: 5px;
+  border-radius: 0.3rem;
   cursor: pointer;
   transition: 0.2s;
+  padding: 0.4rem;
 }
 button:hover {
-  font-size: 2.4rem;
+  font-size: 2rem;
   background-color: rgb(47, 60, 63);
 }
 .contenedor-accion-seleccionada {
-  width: 200px;
+  width: 7rem;
   margin: 0 auto;
 }
 .contenedor-accion-seleccionada img {
+  margin-left: -100px;
+  padding: 0.3rem;
   width: 7rem;
-  border-radius: 10px;
+  border-radius: 1rem;
+  filter: invert(100%) sepia(100%) saturate(0%) hue-rotate(131deg) brightness(220%) contrast(40%);
   visibility: hidden;
+  border: 2px solid #000000;
 }
 .contenedor-opciones {
-  width: 500px;
+  width: 30rem;
   margin: 0 auto;
 }
 .contenedor-opciones img {
   display: inline-block;
+  padding: 0.3rem;
   margin: 0 auto;
-  width: 5.4rem;
-  background: rgb(153, 102, 102);
-  border: 2% solid rgb(0, 0, 0);
-  border-radius: 5px;
+  width: 7rem;
+  filter: invert(100%) sepia(100%) saturate(0%) hue-rotate(131deg) brightness(200%) contrast(50%);
+  border: 1px solid rgb(0, 0, 0);
+  border-radius: 0.5rem;
 }
 
 #jugador-1 {
@@ -52,17 +58,48 @@ button:hover {
   text-align: center;
 }
 h1 {
-  margin: 0.5rem 0 0 0;
+  margin: 0;
   font-size: 2rem;
-  color: white;
+  color: rgb(212, 212, 212);
 }
 h2 {
-  margin: 0 0 0.3rem 0;
+  margin: 0;
   font-size: 4rem;
-  color: white;
+  color: rgb(212, 212, 212);
   text-align: center;
 }
 #reset {
   display: block;
-  margin: 20px auto;
+  margin: 0 auto;
+}
+@media (max-width: 600px) {
+  /* estilos para dispositivos con ancho inferior a 600px */
+  button {
+    font-size: 1.3rem;
+    margin-bottom: 0.5rem;
+  }
+  button:hover {
+    font-size: 1.7rem;
+  }
+  .contenedor-accion-seleccionada {
+    width: 4.5rem;
+  }
+  .contenedor-accion-seleccionada img {
+    width: 4.5rem;
+  }
+  .contenedor-opciones {
+    width: 20rem;
+  }
+  .contenedor-opciones img {
+    width: 4rem;
+  }
+  h1 {
+    font-size: 1.5rem;
+  }
+  h2 {
+    font-size: 2.5rem;
+  }
+
+
+
 }

@@ -122,13 +122,13 @@ function opcSeleccionada2() {
           setTimeout(
             () =>
               alert(`Gana el jugador 1 con un score de ${score1} - ${score2}`),
-            500
+            100
           );
         } else {
           setTimeout(
             () =>
               alert(`Gana el jugador 2 con un score de ${score1} - ${score2}`),
-            500
+            100
           );
         }
         setTimeout(() => window.location.reload(), 2000);
@@ -145,13 +145,13 @@ function opcSeleccionada2() {
           setTimeout(
             () =>
               alert(`Gana el jugador 1 con un score de ${score1} - ${score2}`),
-            500
+            100
           );
         } else {
           setTimeout(
             () =>
               alert(`Gana el jugador 2 con un score de ${score1} - ${score2}`),
-            500
+            100
           );
         }
         setTimeout(() => window.location.reload(), 2000);
@@ -168,13 +168,13 @@ function opcSeleccionada2() {
           setTimeout(
             () =>
               alert(`Gana el jugador 1 con un score de ${score1} - ${score2}`),
-            500
+            100
           );
         } else {
           setTimeout(
             () =>
               alert(`Gana el jugador 2 con un score de ${score1} - ${score2}`),
-            500
+            100
           );
         }
         setTimeout(() => window.location.reload(), 2000);
@@ -191,13 +191,13 @@ function opcSeleccionada2() {
           setTimeout(
             () =>
               alert(`Gana el jugador 1 con un score de ${score1} - ${score2}`),
-            500
+            100
           );
         } else {
           setTimeout(
             () =>
               alert(`Gana el jugador 2 con un score de ${score1} - ${score2}`),
-            500
+            100
           );
         }
         setTimeout(() => window.location.reload(), 2000);
@@ -214,13 +214,13 @@ function opcSeleccionada2() {
           setTimeout(
             () =>
               alert(`Gana el jugador 1 con un score de ${score1} - ${score2}`),
-            500
+            100
           );
         } else {
           setTimeout(
             () =>
               alert(`Gana el jugador 2 con un score de ${score1} - ${score2}`),
-            500
+            100
           );
         }
         setTimeout(() => window.location.reload(), 2000);
@@ -237,13 +237,13 @@ function opcSeleccionada2() {
           setTimeout(
             () =>
               alert(`Gana el jugador 1 con un score de ${score1} - ${score2}`),
-            500
+            100
           );
         } else {
           setTimeout(
             () =>
               alert(`Gana el jugador 2 con un score de ${score1} - ${score2}`),
-            500
+            100
           );
         }
         setTimeout(() => window.location.reload(), 2000);
