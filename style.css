@@ -1,5 +1,5 @@
 * {
-  font-family: "Reenie Beanie", cursive;
+  font-family: 'Martian Mono', monospace;
 }
 body {
   background: rgb(14, 41, 39);
@@ -9,7 +9,7 @@ body {
   margin-bottom: 0.5rem;
 }
 button {
-  font-size: 1.8rem;
+  font-size: 1.5rem;
   background-color: rgb(56, 71, 75);
   color: rgb(212, 212, 212);
   border: 1px solid black;
@@ -19,7 +19,7 @@ button {
   padding: 0.4rem;
 }
 button:hover {
-  font-size: 2rem;
+  font-size: 1.7rem;
   background-color: rgb(47, 60, 63);
 }
 .contenedor-accion-seleccionada {
@@ -59,12 +59,12 @@ button:hover {
 }
 h1 {
   margin: 0;
-  font-size: 2rem;
+  font-size: 1.7rem;
   color: rgb(212, 212, 212);
 }
 h2 {
   margin: 0;
-  font-size: 4rem;
+  font-size: 3rem;
   color: rgb(212, 212, 212);
   text-align: center;
 }
@@ -75,11 +75,11 @@ h2 {
 @media (max-width: 600px) {
   /* estilos para dispositivos con ancho inferior a 600px */
   button {
-    font-size: 1.3rem;
+    font-size: 1.2rem;
     margin-bottom: 0.5rem;
   }
   button:hover {
-    font-size: 1.7rem;
+    font-size: 1.4rem;
   }
   .contenedor-accion-seleccionada {
     width: 4rem;
@@ -95,10 +95,10 @@ h2 {
     width: 3.5rem;
   }
   h1 {
-    font-size: 1.5rem;
+    font-size: 1.2rem;
   }
   h2 {
-    font-size: 2.5rem;
+    font-size: 2rem;
   }
 
 
